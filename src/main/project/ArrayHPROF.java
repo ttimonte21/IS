@@ -1,19 +1,36 @@
 package main.project;
 
+import java.util.ArrayList;
+
 public class ArrayHPROF {
 
-	private String number;
+	private String reference;
 	private String size;
 	private String trace;
 	private String numberofElements;
 	private String elementType;
+	private ArrayList<String> elementRefs;
 	
 	
-	public String getNumber() {
-		return number;
+	public ArrayHPROF(String reference, String size2, String trace2, String numElements, String type) {
+		this.reference = reference;
+		this.size = size2;
+		this.trace = trace2;
+		this.numberofElements = numElements;
+		this.elementType = type;
+		this.elementRefs = new ArrayList<String>();;
 	}
-	public void setNumber(String number) {
-		this.number = number;
+	public ArrayList<String> getElementRefs() {
+		return elementRefs;
+	}
+	public void setElementRefs(ArrayList<String> elementRefs) {
+		this.elementRefs = elementRefs;
+	}
+	public String getReference() {
+		return reference;
+	}
+	public void setReference(String number) {
+		this.reference = number;
 	}
 	public String getSize() {
 		return size;
